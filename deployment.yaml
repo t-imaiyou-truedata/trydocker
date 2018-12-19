@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: air-imayou-server
+spec:
+ replicas: 2
+ selector:
+   matchLabels:
+     name: air-imayou-server
+ template:
+   metadata:
+     labels:
+       name: air-imayou-server
+   spec:
+     containers:
+     - name: air-imayou-server
+       image: gcr.io/study-sandbox/air-imayou-server:latest
+       ports:
+       - containerPort: 8080
+         protocol: TCP
+ revisionHistoryLimit: 100
+ 
