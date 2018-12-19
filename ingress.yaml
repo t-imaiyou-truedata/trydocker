@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "air-imayou-ip"
+    kubernetes.io/ingress.global-static-ip-name: air-imayou-ip
   labels:
       app: ingress
 spec:
