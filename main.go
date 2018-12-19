@@ -19,3 +19,4 @@ func DefaultHandler(w http.ResponseWriter, r *http.Request) {
 func StatusHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "status ok")
 }
+
