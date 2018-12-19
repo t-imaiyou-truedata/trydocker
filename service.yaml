@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: air-imayou-server
- labels:
-   name: air-imayou-server
+  name: air-imayou-server
+  labels:
+    name: air-imayou-server
 spec:
- ports:
- - port: 8080
-   targetPort: 8080
- type: NodePort
- selector:
-   name: air-imayou-server
+  ports:
+  - port: 8080
+    targetPort: 8080
+  type: NodePort
+  selector:
+    name: air-imayou-server
 
